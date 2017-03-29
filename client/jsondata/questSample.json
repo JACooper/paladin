@@ -1,0 +1,54 @@
+{"quest":
+    {"questName": "sampleName",
+    "stages": [{"questStage":
+        {"name": "stageName1",
+        "prompt":"Sample prompt",
+        "options": [{"option":
+                {"description": "Sample response text.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": []
+                }
+            },
+            {"option":
+                {"description": "Sample response text.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": []
+                }
+            },
+            {"option":
+                {"description": "Sample response text.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": []
+                }
+            }],
+        "results": ["stageName2", "stageName2", "stageName3"]}
+    },
+    {"questStage":
+        {"name": "stageName2",
+        "prompt":"Sample prompt",
+        "options": [{"option":
+                {"description": "Sample response text.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": []
+                }
+            }],
+        "results": ["stageName3"]}
+    },
+    {"questStage":
+        {"name": "stageName3",
+        "prompt":"Sample prompt.",
+        "options": [{"option":
+                {"description": "Sample response text.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": [0, 0, 0, 0, 0, 0]
+                }
+            },
+            {"option":
+                {"description": "Sample response text.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": [0, 0, 0, 0, 0, 0]
+                }
+            }],
+        "results": ["null", "null"]}
+    }]
+}}

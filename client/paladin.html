@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            background-color:#6B6B6B;
+        }
+        canvas {
+            border:1px solid gray;
+            display: block;
+            margin:auto;
+        }
+        #bga {display: none;}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet"> 
+    <title>Paladin</title>
+</head>
+<body>
+    <canvas>
+        Please view this webpage with a browser that supports canvas.
+    </canvas>
+    <p style="font-family: MedievalSharp; visibility:hidden;">Inline Styles Are Gross (TM)</p>
+    <script src='js/scene.js'></script>
+    <script src='js/player.js'></script>
+    <script src='js/taggedStructs.js'></script>
+    <script src='js/loader.js'></script>
+    <script src='js/emitter.js'></script>
+    <script src='js/questManager.js'></script>
+    <script src='js/inputManager.js'></script>
+    <script src='js/soundManager.js'></script>
+    <script src='js/assetManager.js'></script>
+    <script src='js/main.js'></script>
+
+    <section id="bga">
+        <audio id="bgAudio" controls loop></audio>
+        <audio id="seAudio" controls></audio>
+    </section>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{"quest":
+    {"questName": "death",
+    "stages": [{"questStage":
+        {"name": "stageName1",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt": "You have perished, and your quest has failed!",
+        "options": [{"option":
+                {"description": "Restart the game",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": []
+                }
+            }],
+        "results": ["intro"]}
+    }]
+}}

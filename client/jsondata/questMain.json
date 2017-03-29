@@ -1,0 +1,94 @@
+{"quest":
+    {"questName": "Main quest",
+    "stages": [{"questStage":
+        {"name": "stageName1",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt": "You come across the town mentioned in the rumors, but something is wrong. The village seems abandoned, but you could swear you saw figures skulking in the shadows out of the corner of your eye.",
+        "options": [{"option":
+                {"description": "Go further into the village and investigate.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0}
+                }
+            },
+            {"option":
+                {"description": "Leave and come back later.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0}
+                }
+            }],
+        "results": ["investigate", "return"]}
+    },
+    {"questStage":
+        {"name": "investigate",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt":"You make it to the village center when suddenly a group of assailants surround you and attack!",
+        "options": [{"option":
+                {"description": "Attempt to fight them off.",
+                "requirement": {"strReq":5, "sklReq":0, "wlpReq":0}
+                }
+            },
+            {"option":
+                {"description": "Flee!",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0}
+                }
+            }],
+        "results": ["fightResolve", "fleeResolve"]}
+    },
+    {"questStage":
+        {"name": "fightResolve",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt":"You are lightly wounded, but manage to defeat your attackers. Documents on their corpses indicate the rumors were but a ruse to draw in unsuspecting travellers. The Saint was never here in the first place.",
+        "options": [{"option":
+                {"description": "Continue your quest and wait for the next rumor. . .",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": [-1, 0, 0, 0, 0, 1],
+                "flags": ["victory"]
+                }
+            }],
+        "results": ["victory"]}
+    },
+    {"questStage":
+        {"name": "fleeResolve",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt":"You attempt to run, but are quickly caught and set upon. You valiantly attempt to fight your attackers off, but having given them time to properly assemble and form up, you didn't stand a chance.",
+        "options": [{"option":
+                {"description": "The world fades before you as you black out in pain. . .",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": [-15, 0, 0, 0, 0, 0]
+                }
+            }],
+        "results": ["null"]}
+    },
+    {"questStage":
+        {"name": "return",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt":"You come back under cover of night, hoping the setting of the sun may have better revealed the true nature of the village. Indeed, you see what you could only describe as bandits infesting the town.",
+        "options": [{"option":
+                {"description": "Attempt to sneak past the guards to the enclave deeper within the village.",
+                "requirement": {"strReq":0, "sklReq":5, "wlpReq":0}
+                }
+            },
+            {"option":
+                {"description": "Enter the village, hoping for the best.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0}
+                }
+            }],
+        "results": ["sneakResolve", "investigate"]}
+    },
+    {"questStage":
+        {"name": "sneakResolve",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt":"Stealthily winding your way through the streets, you come upon the enclave. Infiltrating further, you overhear the bandit leader reveal the rumors were a trap, to lure in unsuspecting travellers.",
+        "options": [{"option":
+                {"description": "You return and subjugate the village with more of your order later, but your search continues. . .",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "flags": ["victory"]
+                }
+            }],
+        "results": ["victory"]}
+    }]
+}}

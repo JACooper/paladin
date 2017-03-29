@@ -1,0 +1,62 @@
+{"quest":
+    {"questName": "intro",
+    "stages": [{"questStage":
+        {"name": "intro",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt":"You are a paladin. As with all of your esoteric order, you are ever in search of the Saint, lost to you those many years ago. Recently, you heard rumors of a strange miracle-worker in the blighted land of Astur. You dare not hope too strongly, but set out nonetheless. . .",
+        "options": [{"option":
+                {"description": "In Paladin, your actions progress the story. Press [1. . .3] to select an option, and [Enter] to confirm."}
+            },
+            {"option":
+                {"description": "Some options have stat requirements that must be fulfilled. Your character starts with 4 of each stat.",
+                "requirement": {"strReq":0, "sklReq":1, "wlpReq":0}
+                }
+            },
+            {"option":
+                {"description": "If you do not meet the requirements for an option, you cannot select that option.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":10}
+                }
+            }],
+        "results": ["intro-2", "intro-2", "intro-2"]}
+    },
+    {"questStage":
+        {"name": "intro-2",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt":"In your quest, you shall undoubtedly encounter challenges that test you beyond your mortal limits. Should you ever find yourself unable to proceed, you might try calling upon the Saint for the power to proceed.",
+        "options": [{"option":
+                {"description": "If an option's stat requirements are beyond you, you can use virtue to try to make up the difference.",
+                "requirement": {"strReq":5, "sklReq":0, "wlpReq":0}
+                }
+            },
+            {"option":
+                {"description": "Here, each option is 1 higher than your corresponding statistic. Spend your 1 virtue to meet the requirement.",
+                "requirement": {"strReq":0, "sklReq":5, "wlpReq":0}
+                }
+            },
+            {"option":
+                {"description": "Virtue is lost after use, and gained infrequently; use it wisely. Press 'V' to enable virtue use.",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":5}
+                }
+            }],
+        "results": ["intro-result", "intro-result", "intro-result"]}
+    },
+    {"questStage":
+        {"name": "intro-result",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt":"As you progress in your quest, you will find that your various experiences strengthen you in body, mind, and spirit. Depending on your actions, your devotion to the Saint may even grow further, as well.",
+        "options": [{"option":
+                {"description": "Resolving encounters will reward you with XP (and possibly virtue).",
+                "resolution": [0, 0, 0, 0, 1, 1]
+                }
+            },
+            {"option":
+                {"description": "When your XP is high enough, you will level up and be able to increase your STR, SKL, or WLP.",
+                "resolution": [0, 0, 0, 0, 1, 1]
+                }
+            }],
+        "results": ["maingame", "maingame"]}
+    }]
+}}

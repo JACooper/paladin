@@ -1,0 +1,15 @@
+{"quest":
+    {"questName": "defeat",
+    "stages": [{"questStage":
+        {"name": "stageName1",
+        "BGA": "behelit",
+        "BGI": "mainBackgroundAlt",
+        "prompt": "You have no hope of completing your quest now. . .",
+        "options": [{"option":
+                {"description": "Restart the game",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0}
+                }
+            }],
+        "results": ["intro"]}
+    }]
+}}

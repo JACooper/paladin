@@ -1,0 +1,28 @@
+{"quest":
+    {"questName": "level",
+    "stages": [{"questStage":
+        {"name": "level1",
+        "BGA": "NO_CHANGE",
+        "BGI": "mainBackgroundAlt",
+        "prompt": "You have accrued significant experience, and feel as though you've grown as one of the Saint's paladins.",
+        "options": [{"option":
+                {"description": "Your body swells with newfound vigor & power (+1 STR)",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": [1, 1, 0, 0, 1, 0]
+                }
+            },
+            {"option":
+                {"description": "You feel as though you've matured and are now more able (+1 SKL)",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": [1, 0, 1, 0, 1, 0]
+                }
+            },
+            {"option":
+                {"description": "You are filled with renewed committment to your purpose (+1 WLP)",
+                "requirement": {"strReq":0, "sklReq":0, "wlpReq":0},
+                "resolution": [1, 0, 0, 1, 1, 0]
+                }
+            }],
+        "results": ["null", "null", "null"]}
+    }]
+}}
